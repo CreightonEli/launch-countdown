@@ -1,0 +1,13 @@
+:root {
+    // Primary
+    --soft-blue: hsl(237, 18%, 59%);
+    --soft-red: hsl(345, 95%, 68%);
+    // Neutral
+    --white: hsl(0, 0%, 100%);
+    --dark-blue: hsl(236, 21%, 26%);
+    --very-dark-blue: hsl(235, 16%, 14%);
+    --deep-dark-blue: hsl(234, 17%, 12%);
+
+    // Gradient
+    --night-sky: linear-gradient(0deg, #231b2a, #231b2a, #211d2b, #201e2b, #1e1e28);
+}
