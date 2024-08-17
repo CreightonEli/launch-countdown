@@ -1,0 +1,39 @@
+@media (min-width: 900px) {
+    h1 {
+        font-size: 16pt;
+        letter-spacing: 8px;
+    }
+
+    main {
+        overflow: hidden;
+    }
+
+    section {
+        margin: 134px auto;
+    }
+
+    footer {
+        background-color: #00000000;
+    }
+
+    #time-card-container {
+        margin: 140px 0 0;
+        transform: scale(2.2);
+    }
+
+    #label-row {
+        margin: 70px 66px;
+        transform: scale(2);
+        width: 340px;
+    }
+
+    #hills {
+        background-position: bottom;
+        background-size: 100%;
+        bottom: 0;
+    }
+
+    .container {
+        margin: 0 auto 36px;;
+    }
+}

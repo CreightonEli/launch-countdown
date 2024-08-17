@@ -16,46 +16,95 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- stylesheet -->
   <link rel="stylesheet" href="/dist/style.css">
+
+  <!-- scripts -->
+   <script src="script.js" defer></script>
 </head>
 <body>
   <div id="stars"></div>
   <div id="hills"></div>
-  <div class="container">
+  <main>
+
     <section>
-      <h1>We're launching soon</h1>
-      <div class="row">
-        
+      <h1>WE’RE LAUNCHING SOON</h1>
+
+      <div id="time-card-container">
+        <div class="card-row">
+          <div class="card top">
+            <span class="day-el-top">08</span>
+            <div class="edge left"></div>
+            <div class="edge right"></div>
+          </div>
+          <div class="card top">
+            <span class="hour-el-top">23</span>
+            <div class="edge left"></div>
+            <div class="edge right"></div>
+          </div>
+          <div class="card top">
+            <span class="minute-el-top">55</span>
+            <div class="edge left"></div>
+            <div class="edge right"></div>
+          </div>
+          <div class="card top">
+            <span class="second-el-top">41</span>
+            <div class="edge left"></div>
+            <div class="edge right"></div>
+          </div>
+        </div>
+        <div class="card-row">
+          <div class="card bottom">
+            <span class="day-el-bot">08</span>
+            <div class="edge left"></div>
+            <div class="edge right"></div>
+          </div>
+          <div class="card bottom">
+            <span class="hour-el-bot">23</span>
+            <div class="edge left"></div>
+            <div class="edge right"></div>
+          </div>
+          <div class="card bottom">
+            <span class="minute-el-bot">55</span>
+            <div class="edge left"></div>
+            <div class="edge right"></div>
+          </div>
+          <div class="card bottom">
+            <span class="second-el-bot">41</span>
+            <div class="edge left"></div>
+            <div class="edge right"></div>
+          </div>
+        </div>
       </div>
-      <div class="row">
-        <h2>Days</h2>
-        <h2>Hours</h2>
-        <h2>Minutes</h2>
-        <h2>Seconds</h2>
+
+      <div id="label-row">
+        <h2 id="days">DAYS</h2>
+        <h2 id="hours">HOURS</h2>
+        <h2 id="minutes">MINUTES</h2>
+        <h2 id="seconds">SECONDS</h2>
       </div>
     </section>
-  </div>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <button id="twitter">
-            <a href=""><i class="ph ph-x-logo"></i></a>
-          </button>
-          <button id="github">
-            <a href=""><i class="ph-fill ph-github-logo"></i></a>
-          </button>
-          <button id="instagram">
-            <a href=""><i class="ph ph-instagram-logo"></i></a>
-          </button>
-        </div>
-        <div class="attribution">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          Coded by <a href="https://creightoneli.github.io/">Elijah Creighton</a>.
-        </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <button id="twitter">
+          <a href=""><i class="ph ph-x-logo"></i></a>
+        </button>
+        <button id="github">
+          <a href=""><i class="ph-fill ph-github-logo"></i></a>
+        </button>
+        <button id="instagram">
+          <a href=""><i class="ph ph-instagram-logo"></i></a>
+        </button>
       </div>
-    </footer>
-  
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://creightoneli.github.io/">Elijah Creighton</a>.
+      </div>
+    </div>
+  </footer>
   
 </body>
 </html>

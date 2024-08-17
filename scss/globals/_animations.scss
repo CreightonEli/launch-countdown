@@ -1,0 +1,43 @@
+
+// .card.top {
+//     animation: flip-top 500ms 0s forwards;
+//     transform-origin: bottom;
+// }
+// .card.bottom {
+//     transform: rotateX(90deg);
+//     animation: flip-bottom 500ms 500ms forwards;
+//     transform-origin: top;
+// }
+
+#stars {
+    animation: stars 60s infinite linear;
+}
+
+// by the time this plays the new top card should display the new number
+@keyframes flip-top {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(-90deg);
+    }
+}
+
+// by the time this plays the new bottom card should display the new number
+@keyframes flip-bottom {
+    0% {
+        transform: rotateX(90deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+@keyframes stars {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 900px;
+    }
+}

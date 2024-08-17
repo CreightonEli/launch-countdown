@@ -10,28 +10,44 @@ body {
     background-repeat: no-repeat;
 }
 
+::selection {
+    background-color: var(--soft-red);
+    color: var(--dark-blue);
+}
+
 #stars {
     position: absolute;
     background-image: url(/images/bg-stars.svg);
     background-repeat: repeat;
-    background-size: 10%;
+    background-size: 900px;
     width: 100%;
     height: 100%;
 }
 
-section {
-    margin: 20px auto;
-}
-
 #hills {
     position: absolute;
-    bottom: 40px;
+    bottom: 42px;
     height: 100%;
     width: 100vw;
     background-image: url(/images/pattern-hills.svg);
     background-repeat: no-repeat;
     background-position: bottom 0 right 12.5%;
-    background-size: 246%;
+    background-size: auto 19%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+section {
+    box-sizing: border-box;
+    margin: 140px auto;
+    padding: 0 8px;
 }
 
 footer {
@@ -70,6 +86,113 @@ a {
     text-decoration: none;
 }
 
-// added in earlier
-.attribution { font-size: 11px; text-align: center; color: var(--soft-blue); }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px; 
+    color: var(--soft-blue); 
+}
+.attribution a { 
+    color: var(--soft-red);
+ }
+
+// Time card styles
+
+#time-card-container {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0 0;
+}
+
+.card-row {
+    perspective: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    margin: 0 8px;
+    color: var(--soft-red);
+    font-size: 25pt;
+    height: 32px;
+    width: 67px;
+    overflow: hidden;
+}
+.card.top {
+    background-color: var(--dark-dark-blue);
+    position: relative;
+    z-index: 1;
+    border: none;
+    border-radius: 4px 4px 0 0;
+    box-shadow: inset 0px -1px 0px hsl(236, 30%, 21%);
+}
+
+.card.bottom {
+    background-color: var(--dark-blue);
+    position: relative;
+    z-index: 2;
+    border: none;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 6px 0 -2px var(--deep-dark-blue);
+}
+
+.edge {
+    position: relative;
+    width: 4px;
+    height: 6px;
+    background-color: var(--deep-dark-blue);
+}
+.edge.left {
+    border-radius: 0 2em 2em 0;
+}
+.edge.right {
+    border-radius: 2em 0 0 2em;
+}
+.card.top .edge.left {
+    left: 0;
+    top: -15px;
+}
+.card.top .edge.right {
+    right: -63px;
+    top: -21px;
+}
+.card.bottom .edge.left {
+    left: 0;
+    bottom: 47px;
+}
+.card.bottom .edge.right {
+    right: -63px;
+    top: -53px;
+}
+
+.card span {
+    margin: 0;
+    opacity: .75;
+}
+.card.top span {
+    position: relative;
+    top: 9px;
+}
+.card.bottom span {
+    position: relative;
+    bottom: 23px;
+}
+
+// labels
+#label-row {
+    display: flex;
+    margin: 14px 21px;
+    justify-content: space-between;
+}
+
+#label-row #days{
+    margin: 0 0 0 17px;
+}
+#label-row #hours{
+    margin: 0 0 0 21px;
+}
+#label-row #minutes{
+    margin: 0 0 0 9px;
+}
+#label-row #seconds{
+    margin: 0 8px 0 0;
+}
