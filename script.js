@@ -74,11 +74,11 @@ function tick() {
         }
         // if hours is zero
         if (currentHour === -1 && currentMin === 59) {
-            currentHour = 59; // resets the minutes
+            currentHour = 23; // resets the minutes
             currentDay -= 1;
         }
         // if everything is zero then stop countdown
-        if (currentDay === -1 && currentHour === 59 && currentMin === 59 && currentSec === 60) {
+        if (currentDay === -1 && currentHour === 23 && currentMin === 59 && currentSec === 60) {
             timeOut = true;
         }
     }
