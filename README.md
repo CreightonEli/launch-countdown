@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://creightoneli.github.io)
+- Solution URL: [https://www.frontendmentor.io/solutions/launch-countdown-timer-9mQltws6po](https://www.frontendmentor.io/solutions/launch-countdown-timer-9mQltws6po)
 - Live Site URL: [https://creightoneli.github.io/launch-countdown](https://creightoneli.github.io/launch-countdown)
 
 ## My process
